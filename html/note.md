@@ -31,9 +31,16 @@
   * **[Inline Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)**
 
 ## Empty Elements:
- >Not all elements follow an opening tag, content, and closing tag (although most do). Some elements consist of a single tag
- * ex: the `<img>` element embeds an image file onto a page
-        <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+ > **Not all elements follow an opening tag, content, and closing tag (although most do). Some elements consist of a single tag**
+ 
+ ex: the `<img>` element embeds an image file onto a page
+
+ *So if we use this code example:*
+ ```html 
+   <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+ ```
+**Output**:
+  <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
 
 ## Best Practice:
   * **Use all tags in lowercase such as `<p>` & `<em`**

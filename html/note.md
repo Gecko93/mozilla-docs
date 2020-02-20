@@ -15,11 +15,13 @@
     * An inline element will **not** cause a new line to appear in the document
     * Normally appears inside paragraph of text:
       * Ex: *using the em tag and p tag* 
+            * ### em:
             <em>first</em><em>second</em><em>third</em>
+            * ### p:
             <p>fourth</p><p>fifth</p><p>sixth</p>
         * **em** is an inline element while **p** is a block element
         * ![MarkDown Image](images/exapmle-1.png)
-
+### Note: HTML5 Redifned Element Categories [Element Categories](https://html.spec.whatwg.org/multipage/indices.html#element-content-categories)
 
 ## Best Practice:
  Best practice, however, is to write **all tags in lowercase** for consistency, readability, and other reasons.

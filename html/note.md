@@ -31,11 +31,10 @@
   * **[Inline Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)**
 
 ## Empty Elements:
- > **Not all elements follow an opening tag, content, and closing tag (although most do). Some elements consist of a single tag**
+Not all elements follow an opening tag, content, and closing tag (although most do). Some elements consist of a single tag
  
- ex: the `<img>` element embeds an image file onto a page
+**Look at this example of embedded an image to understand better:**
 
- *So if we use this code example:*
  ```html 
    <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
  ```

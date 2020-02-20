@@ -14,9 +14,10 @@
   * **Inline Elements** are those contained *within block-level elements* and surround small parts of the document
     * An inline element will **not** cause a new line to appear in the document
     * Normally appears inside paragraph of text:
-      * Ex: <em>first</em><em>second</em><em>third</em>
+      * Ex: *using the em tag and p tag* 
+            <em>first</em><em>second</em><em>third</em>
             <p>fourth</p><p>fifth</p><p>sixth</p>
-        * <em> is an inline element while <p> is a block element
+        * **em** is an inline element while **p** is a block element
         * ![MarkDown Image](images/exapmle-1.png)
 
 

@@ -169,7 +169,7 @@ Output:
 <!-- <p>I am!</p> -->
 Only I'm not inside a comment is shown.
 
-## Sitelinks & Meta Data
+# Sitelinks & Meta Data
 
 [Sitelinks](images/sitelinks.png)
 
@@ -177,7 +177,7 @@ Sitelinks are the links listed below the main page link, you can configure these
 
 *Note: many meta features are not used anymore such as 'meta name="keywords" content="fill,in,keywords"' this is ignored by search engines now due to spammers
 
-### [Open Graph Data](https://ogp.me)
+## [Open Graph Data](https://ogp.me)
 
 Look at [Mozillas Doc Source Code](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML) and find:
 ```html
@@ -208,5 +208,211 @@ Types of icons you can add
     ```html
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     ```
-### Move onto Applying-CSS-JavaScript to Learn More
+## Applying CSS and JavaScript to HTML
+**CSS is used to style the website and JavaScipt can be used for a multitude of things, now we will focus on its ability to add interactions to the website**
 
+## Convention for linking Images, JavaScript, and CSS files
+It is best practice to store images, js, and css in their own folder for organization, this can go deeper but for now use this as a template
+[Site Structure](images/structure.png)
+
+Linking CSS and JS in your index.html is done by:
+```html
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./js/script.js"></script>
+```
+## Setting The Primary Language
+You should always do this for indexing, seo, and people with visual impairments
+```html
+  <html lang="en-US">
+```
+Subset of language inside your html doc:
+```html
+  <p>Japanese example: <span lang="ja">ご飯が熱い。</span>.</p>
+```
+
+# Semantics
+
+One of HTML's main functions is to give the content structure and meaning (known as semantics) for the browser.
+
+## Headings and Paragraphs
+Headings (h1-h6) and paragraphs give you access to structure similar to a newspaper
+
+```html
+  <h1>I Am a Heading</h1>
+  <p>I am a paragraph</p>
+```
+### Implementing structural hierarchy
+```html
+<!-- only have one h1 per page for SEO -->
+  <h1>h1</h1>
+  <p>p</p>
+  <h2>h2</h2>
+  <p>p</p>
+  <h3>h3</h3>
+  <p>p</p>
+```
+### Lists
+```html
+<ul>
+  <li>milk</li>
+  <li>eggs</li>
+  <li>bread</li>
+  <li>hummus</li>
+</ul>
+<ol>
+  <li>Drive to the end of the road</li>
+  <li>Turn right</li>
+  <li>Go straight across the first two roundabouts</li>
+  <li>Turn left at the third roundabout</li>
+  <li>The school is on your right, 300 meters up the road</li>
+</ol>
+<ol>
+  <li>Remove the skin from the garlic, and chop coarsely.</li>
+  <li>Remove all the seeds and stalk from the pepper, and chop coarsely.</li>
+  <li>Add all the ingredients into a food processor.</li>
+  <li>Process all the ingredients into a paste.
+    <ul>
+      <li>If you want a coarse "chunky" hummus, process it for a short time.</li>
+      <li>If you want a smooth hummus, process it for a longer time.</li>
+    </ul>
+  </li>
+</ol>
+```
+### Description Lists
+```html
+<dl>
+  <dt>soliloquy</dt>
+  <dd>In drama, where a character speaks to themselves, representing their inner thoughts or feelings and in the process relaying them to the audience (but not to other characters.)</dd>
+  <dt>monologue</dt>
+  <dd>In drama, where a character speaks their thoughts out loud to share them with the audience and any other characters present.</dd>
+  <dt>aside</dt>
+  <dd>In drama, where a character shares a comment only with the audience for humorous or dramatic effect. This is usually a feeling, thought, or piece of additional background information.</dd>
+</dl>
+```
+
+### Emphasis and Importance
+```html
+<p>This liquid is <strong>highly toxic</strong> —
+if you drink it, <strong>you may <em>die</em></strong>.</p>
+<p>
+  The menu was a sea of exotic words like <i lang="uk-latn">vatrushka</i>,
+  <i lang="id">nasi goreng</i> and <i lang="fr">soupe à l'oignon</i>.
+</p>
+<ol>
+  <li>
+    <b>Slice</b> two pieces of bread off the loaf.
+  </li>
+  <li>
+    <b>Insert</b> a tomato slice and a leaf of
+    lettuce between the slices of bread.
+  </li>
+</ol>
+```
+### Blockquote
+```html
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+  <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+  Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+</blockquote>
+```
+### Inline Quotes
+```html
+p>The quote element — <code>&lt;q&gt;</code> — is <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended
+for short quotations that don't require paragraph breaks.</q></p>
+```
+### Citations
+```html
+<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+<cite>MDN blockquote page</cite></a>:
+</p>
+```
+### Abbreviations
+```html
+<p>We use <abbr title="Hypertext Markup Language">HTML</abbr> to structure our web documents.</p>
+
+<p>I think <abbr title="Reverend">Rev.</abbr> Green did it in the kitchen with the chainsaw.</p>
+```
+### Contact
+```html 
+<address>
+  <p>
+    Chris Mills<br>
+    Manchester<br>
+    The Grim North<br>
+    UK
+  </p>
+
+  <ul>
+    <li>Tel: 01234 567 890</li>
+    <li>Email: me@grim-north.co.uk</li>
+  </ul>
+</address>
+```
+### Subscript and Superscript
+```html
+<p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+<p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+<p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+```
+### Code 
+```html 
+<pre><code>var para = document.querySelector('p');
+
+para.onclick = function() {
+  alert('Owww, stop poking me!');
+}</code></pre>
+
+<p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+
+<p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+
+
+<p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+<pre>$ <kbd>ping mozilla.org</kbd>
+<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+```
+### Date and Time
+```html
+<time datetime="2016-01-20">20 January 2016</time>
+
+```
+or 
+```html
+<!-- Standard simple date -->
+<time datetime="2016-01-20">20 January 2016</time>
+<!-- Just year and month -->
+<time datetime="2016-01">January 2016</time>
+<!-- Just month and day -->
+<time datetime="01-20">20 January</time>
+<!-- Just time, hours and minutes -->
+<time datetime="19:30">19:30</time>
+<!-- You can do seconds and milliseconds too! -->
+<time datetime="19:30:01.856">19:30:01.856</time>
+<!-- Date and time -->
+<time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+<!-- Date and time with timezone offset-->
+<time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time>
+<!-- Calling out a specific week number-->
+<time datetime="2016-W04">The fourth week of 2016</time>
+```
+
+### Anatomy of a Link
+```html
+<p>I'm creating a link to
+<a href="https://www.mozilla.org/en-US/"
+   title="The best place to find more information about Mozilla's
+          mission and how to contribute">the Mozilla homepage</a>.
+</p>
+```
+**Block Level Links**
+```html
+<a href="https://www.mozilla.org/en-US/">
+  <img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage">
+</a>
+```
+## Structuring Layout
+Mozillas Reference Guide [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+## [Validate Your HTML](https://validator.w3.org)

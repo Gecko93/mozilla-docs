@@ -416,3 +416,8 @@ or
 Mozillas Reference Guide [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 ## [Validate Your HTML](https://validator.w3.org)
+
+## [Assessment](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content)
+
+# End
+**That's all I think is necessary to get started howver please go over to [Mozilla's HTML Tutorial](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML) for more info on each topic. It also covers embedding media, and forms.

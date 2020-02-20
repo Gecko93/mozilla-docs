@@ -80,47 +80,52 @@ I like to use double quotes on attributes just incase I need quotes inside to av
 # Anatomy of an HTML document
 **Basic Page Structure**
 ```html
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name=”description” content="This is an example of a simple page structure you can use as an outline">
-    <meta name=”viewport” content=”width=device-width,initial-scale=1″>
-    <title>Web Developer</title>
-    <link rel="stylesheet" href="./styles/style.css">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Gecko">
+  <meta name=”description” content="This is an example of a simple page structure you can use as an outline">
+  <meta name=”viewport” content=”width=device-width,initial-scale=1″>
+  <title>Web Developer</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./js/script.js"></script>
+</head>
+<body>
+  <!-- EXAMPLE of a comment you should fill code with to explain, I wont here -->
+  <div class="wrapper">
+
+    <header class="main-head">
+      <h1 class="site-title">Something To Do Later</h1>
+    </header>
+
+    <nav class="nav-bar">
+      <ul class="simple-list">
+        <li class="list-item"><a class="link-item" href="">First Link</a></li>
+        <li class="list-item"><a class="link-item" href="">Second Link</a></li>
+        <li class="list-item"><a class="link-item" href="">Third Link</a></li>
+      </ul>
+    </nav>
     
-    <div class="wrapper">
-    
-      <header class="main-head">
-        <h1 class="site-title">Something To Do Later</h1>
-      </header>
+    <article class="article-1">
+      <h2 class="article-header">An Interesting H2</h2>
+      <p class="article-p">Ipsum autem facere id est perferendis. Molestias earum odio voluptatibus quam earum totam Quasi alias ad deleniti odio repellat? Consequuntur temporibus repudiandae itaque numquam reiciendis recusandae ut ex quia? Provident?</p>
+    </article>
 
-      <nav class="nav-bar">
-        <ul class="simple-list">
-          <li class="list-item"><a class="link-item" href="">First Link</a></li>
-          <li class="list-item"><a class="link-item" href="">Second Link</a></li>
-          <li class="list-item"><a class="link-item" href="">Third Link</a></li>
-        </ul>
-      </nav>
-      
-      <article class="article-1">
-        <h2 class="article-header">An Interesting H2</h2>
-        <p class="article-p">Ipsum autem facere id est perferendis. Molestias earum odio voluptatibus quam earum totam Quasi alias ad deleniti odio repellat? Consequuntur temporibus repudiandae itaque numquam reiciendis recusandae ut ex quia? Provident?</p>
-      </article>
+    <aside class="sidebar">
+      <h3 class="sidebar-head">Nothing Important Here</h3>
+    </aside>
 
-      <aside class="sidebar">
-        <h3 class="sidebar-head">Nothing Important Here</h3>
-      </aside>
-      <aside class="ads">
-        <h3 class="ad">Ads Go Here</h3>
-      </aside>
+    <aside class="ads">
+      <h3 class="ad">Ads Go Here</h3>
+    </aside>
 
-      <footer class="main-footer"><h4 class="footer-header">Small Footer</h4></footer>
-    </div>  
-  </body>
-  </html>
+    <footer class="main-footer">
+      <h4 class="footer-header">Small Footer</h4>
+    </footer>
+  </div>  
+</body>
+</html>
 ```
 **Structure Breakdown**
 1. `<!DOCTYPE html>`: used to act as links to a set of rules that the HTML page had to follow, way before HTML5 or XML.
@@ -150,3 +155,16 @@ notice how the first makes element a new paragraph and leaves one open p tag, wh
 ><p>In HTML, you define a paragraph using the <p> element.</p>
 
 ><p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+
+## HTML Comments
+I will not explain this as well because it is pretty self explanatory. Comment something for your or another developers eyes but not display it on the actual page (sort of)
+```html
+  <p>I'm not inside a comment</p>
+
+  <!-- <p>I am!</p> -->
+```
+Output:
+><p>I'm not inside a comment</p>
+
+<!-- <p>I am!</p> -->
+Only I'm not inside a comment is shown.

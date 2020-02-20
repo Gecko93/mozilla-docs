@@ -147,6 +147,6 @@ Example:
 ```
 notice how the first makes element a new paragraph and leaves one open p tag, where as the second turns this into text of the only p tag registered.
 
-<p>In HTML, you define a paragraph using the <p> element.</p>
+><p>In HTML, you define a paragraph using the <p> element.</p>
 
-<p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+><p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>

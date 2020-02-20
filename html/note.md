@@ -53,8 +53,100 @@ Using the `<a>` tag to link my most used site in a new window with attributes:
 ```html
     <a href="http://stackoverflow.com" target="_blank" rel="noopener noreferrer">My Most Used Site</a>
 ```
-<a href="http://stackoverflow.com" target="_blank" rel="noopener noreferrer">My Most Used Site</a>
+*if you are unfamiliar with these look them up on the website I linked *<a href="http://stackoverflow.com" target="_blank" rel="noopener noreferrer">HERE</a>
+
+## Boolean Attributes
+Boolean attributes can only have **one** value which is typically the same as the attribute name. The [disabled](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-disabled) attribute greys out form elements so the user cannot enter data in them using a boolean attribute.
+
+```html
+  <input type="text" disabled="disabled">
+```
+You can also write this in shorthand like this:
+
+```html
+  <!-- using the disabled attribute prevents the end user from entering text into the input box -->
+<input type="text" disabled>
+
+<!-- The user can enter text into the follow input, as it doesn't contain the disabled attribute -->
+<input type="text">  
+```
+## Single or double quotes for attributes?
+Answer: whichever you prefer as long as you dont **mix them together**
+I like to use double quotes on attributes just incase I need quotes inside to avoid having to add ugly syntax which I wont talk about further
+
 ## Best Practice:
   * **Use all tags in lowercase such as `<p>` & `<em` insead of `<P></p> or <P></P>`**
 
- 
+# Anatomy of an HTML document
+**Basic Page Structure**
+```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name=”description” content="This is an example of a simple page structure you can use as an outline">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1″>
+    <title>Web Developer</title>
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    
+    <div class="wrapper">
+    
+      <header class="main-head">
+        <h1 class="site-title">Something To Do Later</h1>
+      </header>
+
+      <nav class="nav-bar">
+        <ul class="simple-list">
+          <li class="list-item"><a class="link-item" href="">First Link</a></li>
+          <li class="list-item"><a class="link-item" href="">Second Link</a></li>
+          <li class="list-item"><a class="link-item" href="">Third Link</a></li>
+        </ul>
+      </nav>
+      
+      <article class="article-1">
+        <h2 class="article-header">An Interesting H2</h2>
+        <p class="article-p">Ipsum autem facere id est perferendis. Molestias earum odio voluptatibus quam earum totam Quasi alias ad deleniti odio repellat? Consequuntur temporibus repudiandae itaque numquam reiciendis recusandae ut ex quia? Provident?</p>
+      </article>
+
+      <aside class="sidebar">
+        <h3 class="sidebar-head">Nothing Important Here</h3>
+      </aside>
+      <aside class="ads">
+        <h3 class="ad">Ads Go Here</h3>
+      </aside>
+
+      <footer class="main-footer"><h4 class="footer-header">Small Footer</h4></footer>
+    </div>  
+  </body>
+  </html>
+```
+**Structure Breakdown**
+1. `<!DOCTYPE html>`: used to act as links to a set of rules that the HTML page had to follow, way before HTML5 or XML.
+  1. `<!DOCTYPE html>` is a short and sweet valid doctype to let your browser know this is an html document
+2. `<html></html>`: Wraps all the content on the entire page and sometimes referred to as the **root element**
+3. `<head></head>` Acts as a container for everything included on your HTML page that *isn't* showed to the user. 
+  1. Includes things like keywords, page descriptions, titles, links to css and javascript files, and more
+4. `<meta charset="utf-8">`: Specifies the character set for your document. **Do not omit this**
+5. `<title></title>`: Sets the title of your page, appears in browser tab, search engines, and bookmarks
+6. `<body></body>`: Contains *all* content that you are showing the user.
+
+## Whitespace is redundant in HTML
+No matter how much whitespace is used the HTML parser reduces it to **one single space when rendering the code
+
+## Entity References: Including Special Characters in HTML
+** <, >, ", and & are special characters because they **are apart of the HTML syntax itself**
+Use this table to include one in your text
+[Mozilla Table](images/mozilla-table.png)
+Example:
+```html
+  <p>In HTML, you define a paragraph using the <p> element.</p>
+
+  <p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+```
+notice how the first makes element a new paragraph and leaves one open p tag, where as the second turns this into text of the only p tag registered.
+
+<p>In HTML, you define a paragraph using the <p> element.</p>
+
+<p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>

@@ -17,7 +17,7 @@
       * Ex: <em>first</em><em>second</em><em>third</em>
             <p>fourth</p><p>fifth</p><p>sixth</p>
         * <em> is an inline element while <p> is a block element
-        * ![MarkDown] (./images/example-1.png)
+        * ![MarkDown] (/images/example-1.png)
 
 
 ## Best Practice:

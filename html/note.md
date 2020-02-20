@@ -41,6 +41,20 @@ Not all elements follow an opening tag, content, and closing tag (although most 
 **Output**:
   <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
 
+## Attributes
+Elements contain attributes which look like:
+[Mozilla Attribute Example](images/mozilla-attributes.png)
+These attributes contain information you want to use but not appear on the browser such as **id**,**class**,**target**, etc.
+Attributes consist of:
+  * space between it and element name
+  * attr name followed by = 'class='
+  * attr value 'class=my-class'
+Using the `<a>` tag to link my most used site in a new window with attributes:
+```html
+    <a href="http://stackoverflow.com" target="_blank" rel="noopener noreferrer">My Most Used Site</a>
+```
+<a href="http://stackoverflow.com" target="_blank" rel="noopener noreferrer">My Most Used Site</a>
 ## Best Practice:
-  * **Use all tags in lowercase such as `<p>` & `<em`**
+  * **Use all tags in lowercase such as `<p>` & `<em` insead of `<P></p> or <P></P>`**
+
  

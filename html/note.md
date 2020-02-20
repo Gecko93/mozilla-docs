@@ -1,3 +1,4 @@
+**These Notes are not my own, I have paraphrased and edited some points for readability, however the complete and much thorough documentation can be found on Mozilla's Website: [Mozilla's HTML Documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#Types_of_CSS_boxes)**
 # HTML is Not a programming language
 **markup language**
   * tells browser how to structure websites
@@ -21,7 +22,12 @@
             <p>fourth</p><p>fifth</p><p>sixth</p>
         * **em** is an inline element while **p** is a block element
         * ![MarkDown Image](images/exapmle-1.png)
-### Note: HTML5 Redifned Element Categories [Element Categories](https://html.spec.whatwg.org/multipage/indices.html#element-content-categories)
+### Note: HTML5 Redifned Element Categories Source:[Element Categories](https://html.spec.whatwg.org/multipage/indices.html#element-content-categories)
+### Note: "block" and "inline" are not the same as types of CSS boxes display:block; display:inline;.
+  * **Even though they correlate it DOES NOT change which elements it can contain and which elements it can be contained in**
+    * [Types Of CSS Boxes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#Types_of_CSS_boxes)
+  * *This is why HTML5 drops these terms to prevent confused coders*
+
 
 ## Best Practice:
  Best practice, however, is to write **all tags in lowercase** for consistency, readability, and other reasons.

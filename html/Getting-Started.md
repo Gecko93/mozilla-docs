@@ -168,3 +168,45 @@ Output:
 
 <!-- <p>I am!</p> -->
 Only I'm not inside a comment is shown.
+
+## Sitelinks & Meta Data
+
+[Sitelinks](images/sitelinks.png)
+
+Sitelinks are the links listed below the main page link, you can configure these in [Google Webmaster Tools](https://www.google.com/webmasters) and improves your search results **highly recommend**
+
+*Note: many meta features are not used anymore such as 'meta name="keywords" content="fill,in,keywords"' this is ignored by search engines now due to spammers
+
+### [Open Graph Data](https://ogp.me)
+
+Look at [Mozillas Doc Source Code](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML) and find:
+```html
+  <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+  <meta property="og:description" content="The Mozilla Developer Network (MDN) provides
+  information about Open Web technologies including HTML, CSS, and APIs for both Web sites
+  and HTML5 Apps. It also documents Mozilla products, like Firefox OS.">
+  <meta property="og:title" content="Mozilla Developer Network">
+```
+This gives the facebook user a better user experience when sharing a link to the site on facebook
+
+[Mozilla Facebook](images/facebook-moz.png)
+
+Twitters proprietary metadata called [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards)
+
+```html
+<meta name="twitter:title" content="Mozilla Developer Network">
+```
+## Adding Custom Icons
+Adding custom icons to your site makes your site look more professional and enriches your site design
+
+Types of icons you can add
+1. Favicon
+  1. 16 px square icon used in browser tab and bookmarks
+  2. Add Favicon By:
+    1. Saving it in the same directory as sites index page saved in .ico format
+    2. add this link in the `<head>` of your index.html
+    ```html
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    ```
+### Move onto Applying-CSS-JavaScript to Learn More
+
